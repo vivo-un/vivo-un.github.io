@@ -128,6 +128,14 @@ h3 {
   transition-property:width, background-color;
 }
 
+
+.skillbar-bar {
+  height:1.5em;
+  width:0px;
+  -webkit-filter: brightness(90%); /* Safari */
+  filter: brightness(90%);
+}
+
 .skillbar-title {
   position:absolute;
   top:0;
@@ -139,17 +147,12 @@ h3 {
   letter-spacing: 0.1em;
 }
 
-.skillbar-bar {
-  height:1.5em;
-  width:0px;
-}
-
 .skillbar-title span {
   display:block;
-  background:rgba(0, 0, 0, 0.2);
   padding:0 1em;
   height:1.9em;
   line-height:1.9em;
+  background:rgba(0, 0, 0, 0.3);
 }
 
 .html {
@@ -176,6 +179,27 @@ h3 {
   background-color: #00D8FF;
 }
 
+.node {
+  background-color: #90C53F;
+}
+
+.express {
+  background-color: #3AA040;
+}
+
+.sql {
+  background-color: #F29111;
+}
+
+.sequelize {
+  background-color: #1F6EB5;
+}
+
+.mongo {
+  background-color: #1D8B37;
+}
+
+
 /*-----------------------MEDIA SCREEN--------------------------*/
 
 @media only screen and (min-width: 480px) {
@@ -193,8 +217,6 @@ h3 {
     width:50%;
   }
   .skillbar-title span {
-    display:block;
-    background:rgba(0, 0, 0, 0.2);
     padding:0 1em;
     height:2.15em;
     line-height:2.15em;
