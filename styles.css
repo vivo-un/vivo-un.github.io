@@ -63,7 +63,7 @@ h3 {
   width:85%;
   margin:auto;
   background-color:#eeeeee;
-  padding: 4em 2em 6em 2em;
+  padding: 4em 2em 4em 2em;
   /*margin: 0em 2em 7em 2em;*/
   box-sizing:border-box;
 }
@@ -132,8 +132,8 @@ h3 {
 .skillbar-bar {
   height:1.5em;
   width:0px;
-  -webkit-filter: brightness(90%); /* Safari */
-  filter: brightness(90%);
+  -webkit-filter: brightness(88%); /* Safari */
+  filter: brightness(88%);
 }
 
 .skillbar-title {
@@ -199,6 +199,13 @@ h3 {
   background-color: #1D8B37;
 }
 
+.gulp {
+  background-color: #CF4646;
+}
+
+.jasmine {
+  background-color: #8A4182;
+}
 
 /*-----------------------MEDIA SCREEN--------------------------*/
 
