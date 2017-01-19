@@ -13,6 +13,17 @@ h1 {
   letter-spacing:0.5em;
   text-transform:uppercase;
 }
+
+h3, .nav li {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform:uppercase;
+}
+
+svg {
+  margin:auto;
+}
+
 .landing {
   text-align: center;
   height:80vh;
