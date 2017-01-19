@@ -20,6 +20,7 @@ h1, h2 {
 h2 {
   font-size:2em;
   text-align:center;
+  margin-bottom:1em;
 }
 
 h3, .nav li {
@@ -28,10 +29,14 @@ h3, .nav li {
   text-transform:uppercase;
 }
 
+h3 {
+  text-align: center;
+}
+
 #me {
   width: 7em;
   height:7em;
-  margin-left:50%;
+  margin-left:49%;
   margin-right:50%;
   border-radius:50%;
 }
@@ -42,15 +47,8 @@ h3, .nav li {
   margin-bottom:-0.3em;
 }
 
-.col-4 {
-  min-height:1%;
-  width: 30%;
-  float:left;
-}
-
-.col-6 {
-  float:left;
-  width:50%;
+[class*='col-'] {
+  width:100%;
 }
 
 .nav {
@@ -81,6 +79,14 @@ h3, .nav li {
   overflow:auto;
 }
 
+.skill {
+/*  border:1px solid #aaaaaa;*/
+  background-color: #dddddd;
+  margin:1%;
+  padding: 1em 0em 1em 0em;
+  line-height:1.5em;
+}
+
 .nav li {
   float:right;
   margin-left:1em;
@@ -96,6 +102,16 @@ h3, .nav li {
 @media only screen and (min-width: 480px) {
   body {
     font-size:0.9em;
+  }
+  .col-4 {
+    min-height:1%;
+    width: 31%;
+    float:left;
+  }
+
+  .col-6 {
+    float:left;
+    width:50%;
   }
 }
 
