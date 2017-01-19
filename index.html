@@ -16,29 +16,11 @@
       <li>Hobby</li>
       <li>Portfolio</li>
       <li><a href='#skills'>Skills</a></li>
+      <li><a href='#about'>About</a></li>
     </ul>
     <div id='top' class='landing'>
       <h1 >Vi Vo</h1>
       <h3>< UI UX Engineer /></h3>
-    </div>
-
-    <div class='svg'>
-      <svg width="100%" height="3em" viewBox="0 0 30 30" preserveAspectRatio="none">
-        <polygon fill='#bbbbbb' stroke-width='0'
-                 points="0,30 5,0 25,0 30,30"/>
-      </svg>
-    </div>
-
-    <div class='topic'>
-      <h2>About</h2>
-        <div class='row'>
-          <div class='col-4'>
-            <img id='me' src='assets/FullSizeRender.jpg'>
-          </div>
-          <div class='col-6'>
-            <p>I believe in making life more enjoyable. With <a href='http://www.cnn.com/2016/06/30/health/americans-screen-time-nielsen/'>Americans devoting more than 10 hours a day to screen time</a>, it makes sense for me to build applications. I became a full stack software engineer so that I can have the freedom to build what I imagine, but my passion, and therefore speciality, lies in the front-end space with user interface engineering and user experience design.</p>
-          </div>
-        </div>
     </div>
 
     <div class='svg'>
@@ -54,13 +36,54 @@
         <div class='col-4 skill'>
             <h3>Front-end:</h3>
               <ul>
-                <li>JavaScript</li>
+                <div class="skillbar clearfix " data-percent="20%">
+                  <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                  <div class="skillbar-bar" style="background: #e67e22;"></div>
+                  <div class="skill-bar-percent">20%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="25%">
+                  <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                  <div class="skill-bar-percent">25%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="50%">
+                  <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+                  <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                  <div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="40%">
+                  <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                  <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                  <div class="skill-bar-percent">40%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+                  <div class="skillbar-bar" style="background: #525252;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+                  <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                  <div class="skill-bar-percent">100%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="70%">
+                  <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+                  <div class="skillbar-bar" style="background: #4288d0;"></div>
+                  <div class="skill-bar-percent">70%</div>
+                </div>
+<!--                 <li>JavaScript</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>jQuery</li>
                 <li>MVC</li>
                 <li>ReactJS</li>
-                <li>AngularJS</li>
+                <li>AngularJS</li> -->
               </ul>
           </div>
           <div class='col-4 skill'>
@@ -88,6 +111,25 @@
               </ul>
           </div>
       </div>
+    </div>
+
+       <div class='svg'>
+      <svg width="100%" height="3em" viewBox="0 0 30 30" preserveAspectRatio="none">
+        <polygon fill='#bbbbbb' stroke-width='0'
+                 points="0,30 5,0 25,0 30,30"/>
+      </svg>
+    </div>
+
+    <div class='topic'>
+      <h2 id='about'>About</h2>
+        <div class='row'>
+          <div class='col-4'>
+            <img id='me' src='assets/FullSizeRender.jpg'>
+          </div>
+          <div class='col-6'>
+            <p>I believe in making life more enjoyable. With <a href='http://www.cnn.com/2016/06/30/health/americans-screen-time-nielsen/'>Americans devoting more than 10 hours a day to screen time</a>, it makes sense for me to build applications. I became a full stack software engineer so that I can have the freedom to build what I imagine, but my passion, and therefore speciality, lies in the front-end space with user interface engineering and user experience design.</p>
+          </div>
+        </div>
     </div>
 
     <script type="text/javascript">$(function(){app.init();})</script>
