@@ -9,12 +9,17 @@ ul {
   list-style-type:none;
 }
 
-h1 {
+h1, h2 {
   font-weight:normal;
   font-size:5em;
   letter-spacing:0.5em;
   text-transform:uppercase;
   margin:0.1em;
+}
+
+h2 {
+  font-size:2em;
+  text-align:center;
 }
 
 h3, .nav li {
@@ -23,11 +28,44 @@ h3, .nav li {
   text-transform:uppercase;
 }
 
+#me {
+  width: 7em;
+  height:7em;
+  margin-left:50%;
+  margin-right:50%;
+  border-radius:50%;
+}
+
+.svg {
+  width:85%;
+  margin:auto;
+}
+
+.col-4 {
+  min-height:1%;
+  width: 30%;
+  float:left;
+}
+
+.col-6 {
+  float:left;
+  width:50%;
+}
+
 .nav {
   position: fixed;
   width:98%;
   background-color:white;
   margin-top:0px;
+}
+
+.topic {
+  width:85%;
+  margin:auto;
+  background-color:#eeeeee;
+  padding: 4em 2em 11em 2em;
+  /*margin: 0em 2em 7em 2em;*/
+  box-sizing:border-box;
 }
 
 .landing {

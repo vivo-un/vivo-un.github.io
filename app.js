@@ -3,7 +3,6 @@ var app;
 $(document).ready(function(){
   app = {
     init: function() {
-      alert('i work');
       // Add smooth scrolling to all links
       $("a").on('click', function(event) {
 
