@@ -4,6 +4,7 @@ $(document).ready(function(){
   app = {
     init: function() {
       app.handleScrollLinks();
+      app.handleSkillsAnimate();
     },
     handleScrollLinks: function() {
       $("a").on('click', function(event) {
@@ -19,7 +20,11 @@ $(document).ready(function(){
       });
     },
     handleSkillsAnimate: function() {
-
+      $('.skillbar').each(function() {
+        $(this).find('.skillbar-bar').animate({
+          width:$(this).attr('data-percent')
+        }, 4000);
+      });
     }
   };
 });
