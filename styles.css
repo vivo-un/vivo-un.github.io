@@ -2,6 +2,7 @@ body {
   background:#e0e0e0;
   color:black;
   font-size:0.7em;
+  margin:0px;
 }
 
 ul {
@@ -13,20 +14,27 @@ h1 {
   font-size:5em;
   letter-spacing:0.5em;
   text-transform:uppercase;
+  margin:0.1em;
 }
 
 h3, .nav li {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform:uppercase;
 }
 
+.nav {
+  position: fixed;
+  width:98%;
+  background-color:white;
+  margin-top:0px;
+}
 
 .landing {
   text-align: center;
   height:80vh;
-  padding-top:20vh;
-  padding-bottom:20vh;
+  padding-top:30vh;
+  padding-bottom:30vh;
   box-sizing:border-box;
 }
 
@@ -34,6 +42,8 @@ h3, .nav li {
   float:right;
   margin-left:1em;
   margin-right:1em;
+  padding:1em;
+  font-size:0.8em;
 }
 
 #home {
