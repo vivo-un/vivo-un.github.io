@@ -116,11 +116,11 @@ h3 {
   width:100%;
   background:#eee;
   height:1.5em;
-  -webkit-transition:0.4s linear;
-  -moz-transition:0.4s linear;
-  -ms-transition:0.4s linear;
-  -o-transition:0.4s linear;
-  transition:0.4s linear;
+  -webkit-transition:0.4s ease;
+  -moz-transition:0.4s ease;
+  -ms-transition:0.4s ease;
+  -o-transition:0.4s ease;
+  transition:0.4s ease;
   -webkit-transition-property:width, background-color;
   -moz-transition-property:width, background-color;
   -ms-transition-property:width, background-color;

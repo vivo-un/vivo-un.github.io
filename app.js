@@ -4,7 +4,9 @@ $(document).ready(function(){
   app = {
     init: function() {
       app.handleScrollLinks();
-      app.handleSkillsAnimate();
+      $(window).on('scroll', app.checkIfInView);
+      $(window).on('scroll resize', app.checkIfInView);
+      $(window).trigger('scroll');
     },
     handleScrollLinks: function() {
       $("a").on('click', function(event) {
@@ -23,7 +25,30 @@ $(document).ready(function(){
       $('.skillbar').each(function() {
         $(this).find('.skillbar-bar').animate({
           width:$(this).attr('data-percent')
-        }, 4000);
+        }, 1500);
+      });
+    },
+    checkIfInView: function() {
+      var window_height = $(window).height();
+      var window_top_position = $(window).scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+      console.log($.each);
+
+      $('.skillbar').each(function() {
+        console.log('hi');
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+            app.handleSkillsAnimate();
+        //   $element.addClass('in-view');
+        // } else {
+        //   $element.removeClass('in-view');
+        }
       });
     }
   };
