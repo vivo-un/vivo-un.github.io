@@ -100,27 +100,6 @@ h3 {
   float:left;
 }
 
-@media only screen and (min-width: 480px) {
-  body {
-    font-size:0.9em;
-  }
-  .col-4 {
-    min-height:1%;
-    width: 31%;
-    float:left;
-  }
-
-  .col-6 {
-    float:left;
-    width:50%;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  body {
-    font-size:1.3em;
-  }
-}
 
 /*---------------------SKILL BAR---------------------*/
 
@@ -154,23 +133,23 @@ h3 {
   top:0;
   left:0;
   width:7em;
-  font-size:0.8em;
+  font-size:0.7em;
   color:#ffffff;
-  background:#6adcfa;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.skillbar-bar {
+  height:1.5em;
+  width:0px;
 }
 
 .skillbar-title span {
   display:block;
   background:rgba(0, 0, 0, 0.2);
   padding:0 1em;
-  height:1.87em;
-  line-height:1.87em;
-}
-
-.skillbar-bar {
-  height:1.5em;
-  width:0px;
-  background:#6adcfa;
+  height:1.9em;
+  line-height:1.9em;
 }
 
 .html {
@@ -187,4 +166,43 @@ h3 {
 
 .javascript {
   background-color: #FFD83A;
+}
+
+.angular {
+  background-color: #CD2C27;
+}
+
+.react {
+  background-color: #00D8FF;
+}
+
+/*-----------------------MEDIA SCREEN--------------------------*/
+
+@media only screen and (min-width: 480px) {
+  body {
+    font-size:0.9em;
+  }
+  .col-4 {
+    min-height:1%;
+    width: 31%;
+    float:left;
+  }
+
+  .col-6 {
+    float:left;
+    width:50%;
+  }
+  .skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.2);
+    padding:0 1em;
+    height:2.15em;
+    line-height:2.15em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    font-size:1.3em;
+  }
 }
