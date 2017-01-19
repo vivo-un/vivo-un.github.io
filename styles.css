@@ -1,6 +1,7 @@
 body {
   background:#e0e0e0;
   color:black;
+  font-size:0.7em;
 }
 
 ul {
@@ -20,9 +21,6 @@ h3, .nav li {
   text-transform:uppercase;
 }
 
-svg {
-  margin:auto;
-}
 
 .landing {
   text-align: center;
@@ -40,4 +38,16 @@ svg {
 
 #home {
   float:left;
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    font-size:0.9em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    font-size:1.3em;
+  }
 }
