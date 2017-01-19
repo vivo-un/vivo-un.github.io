@@ -1,4 +1,32 @@
 body {
-  background:grey;
-  color:white;
+  background:#e0e0e0;
+  color:black;
+}
+
+ul {
+  list-style-type:none;
+}
+
+h1 {
+  font-weight:normal;
+  font-size:5em;
+  letter-spacing:0.5em;
+  text-transform:uppercase;
+}
+.landing {
+  text-align: center;
+  height:80vh;
+  padding-top:20vh;
+  padding-bottom:20vh;
+  box-sizing:border-box;
+}
+
+.nav li {
+  float:right;
+  margin-left:1em;
+  margin-right:1em;
+}
+
+#home {
+  float:left;
 }
