@@ -22,12 +22,20 @@ a:visited {
 
 a:hover {
   font-size:1.2em;
-  -webkit-transition:0.4s ease;
-  -moz-transition:0.4s ease;
-  -ms-transition:0.4s ease;
-  -o-transition:0.4s ease;
-  transition:0.4s ease;
+  -webkit-transition:0.3s ease;
+  -moz-transition:0.3s ease;
+  -ms-transition:0.3s ease;
+  -o-transition:0.3s ease;
+  transition:0.3s ease;
   border-bottom:3px solid black;
+}
+
+a:hover.image{
+  border-bottom:none;
+  font-size:1em;
+  -webkit-filter: brightness(105%); /* Safari */
+  filter: brightness(105%);
+
 }
 
 ul {
@@ -256,6 +264,11 @@ img.app{
 .info {
   text-align: center;
   padding:5em 0em 5em 0em;
+}
+
+.app {
+  -webkit-filter: drop-shadow(-1px 2px 5px #cccccc);
+  filter: drop-shadow(-1px 2px 5px #cccccc);
 }
 
 .info img {
