@@ -247,6 +247,13 @@ img.app{
   max-width:3em;
 }
 
+/*---------------------------ART HOBBY------------------------*/
+.art img {
+  max-height:50vh;
+  max-width:98%;
+}
+
+
 /*-----------------------MEDIA SCREEN--------------------------*/
 
 @media only screen and (min-width: 700px) {
@@ -259,6 +266,13 @@ img.app{
     float:left;
   }
 
+  .col-3 {
+    width: 20.5%;
+    float:left;
+    margin-left:3%;
+    margin-right:3%;
+  }
+
   .col-6 {
     float:left;
     width:47%;
@@ -268,6 +282,7 @@ img.app{
     width:90%;
     margin:auto;
   }
+
   .skillbar-title span {
     padding:0 1em;
     height:2.15em;
@@ -278,5 +293,9 @@ img.app{
 @media only screen and (min-width: 1500px) {
   body {
     font-size:1.3em;
+  }
+  .col-6.art {
+    margin-left:4%;
+    width:43%;
   }
 }
