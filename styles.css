@@ -30,7 +30,6 @@ h1, h2 {
 h2 {
   font-size:2em;
   text-align:center;
-  margin-bottom:1em;
 }
 
 h3, .nav li {
@@ -59,6 +58,7 @@ h3 {
 
 [class*='col-'] {
   width:94%;
+  text-align: center;
 }
 
 .nav {
@@ -251,6 +251,9 @@ img.app{
 .art img {
   max-height:50vh;
   max-width:98%;
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.23);
+  -moz-box-shadow:    -1px 2px 5px 0px rgba(50, 50, 50, 0.23);
+  box-shadow:         -1px 2px 5px 0px rgba(50, 50, 50, 0.23);
 }
 
 
@@ -281,6 +284,7 @@ img.app{
   .col-12 {
     width:90%;
     margin:auto;
+    margin-bottom:1.5em;
   }
 
   .skillbar-title span {
