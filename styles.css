@@ -1,8 +1,14 @@
 body {
-  background:#dddddd;
+  background:#cccccc;
   color:black;
   font-size:0.7em;
   margin:0px;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
 }
 
 ul {
@@ -52,12 +58,13 @@ h3 {
 }
 
 [class*='col-'] {
-  width:100%;
+  width:94%;
 }
 
 .nav {
   position: fixed;
   width:98%;
+  background-color: rgba(204, 204, 204, 0.9);
 /*  background-color:white;*/
   margin-top:0px;
   z-index:1;
@@ -69,7 +76,7 @@ h3 {
 .topic {
   width:90%;
   margin:auto;
-  background-color:#eeeeee;
+  background-color:#dddddd;
   padding: 4em 2em 4em 2em;
   /*margin: 0em 2em 7em 2em;*/
   box-sizing:border-box;
@@ -107,7 +114,7 @@ h3 {
 /*---------------------SKILL BAR---------------------*/
 
 .backing {
-  background-color: #dddddd;
+  background-color: #eeeeee;
   margin:1%;
   padding: 1em 0em 1em 0em;
   line-height:1.5em;
@@ -126,8 +133,8 @@ h3 {
   position:relative;
   display:block;
   margin-bottom:0.6em;
-  width:100%;
-  background:#eee;
+  width:94%;
+  background:#fff;
   height:1.5em;
   -webkit-transition:0.4s ease;
   -moz-transition:0.4s ease;
@@ -223,9 +230,26 @@ h3 {
   background-color: #8A4182;
 }
 
+/*-----------------------PORTFOLIO--------------------------*/
+
+img.app{
+  width:90%;
+  margin:auto;
+  padding:2em;
+}
+
+.info {
+  text-align: center;
+  padding:5em 0em 5em 0em;
+}
+
+.info img {
+  max-width:3em;
+}
+
 /*-----------------------MEDIA SCREEN--------------------------*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 700px) {
   body {
     font-size:0.9em;
   }
@@ -237,7 +261,12 @@ h3 {
 
   .col-6 {
     float:left;
-    width:50%;
+    width:47%;
+  }
+
+  .col-12 {
+    width:90%;
+    margin:auto;
   }
   .skillbar-title span {
     padding:0 1em;
