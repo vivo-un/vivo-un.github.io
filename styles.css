@@ -176,7 +176,7 @@ h3 {
 
 .skillbar-bar {
   height:1.5em;
-  width:0px;
+  width:5em;
   -webkit-filter: brightness(88%); /* Safari */
   filter: brightness(88%);
 }
