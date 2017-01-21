@@ -68,6 +68,10 @@ h3 {
   text-align: center;
 }
 
+.container {
+  width:98%;
+}
+
 #me {
   width: 7em;
   height:7em;
@@ -283,6 +287,13 @@ img.app{
   box-shadow:         -1px 2px 5px 0px rgba(50, 50, 50, 0.23);
 }
 
+/*---------------------------CONTACT------------------------*/
+
+.row.contact {
+  width:101%;
+  margin:auto;
+  margin-left:2.6%;
+}
 
 /*-----------------------MEDIA SCREEN--------------------------*/
 
