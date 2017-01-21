@@ -295,6 +295,11 @@ img.app{
   margin-left:2.6%;
 }
 
+.contact img {
+  max-width:3em;
+  padding:1%;
+}
+
 /*-----------------------MEDIA SCREEN--------------------------*/
 
 @media only screen and (min-width: 700px) {
