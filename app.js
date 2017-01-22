@@ -7,6 +7,22 @@ $(document).ready(function(){
       $(window).on('scroll', app.checkIfInView);
       $(window).on('scroll resize', app.checkIfInView);
       $(window).trigger('scroll');
+      document.getElementById('myGmail').addEventListener('click', app.copyText);
+    },
+    copyText: function(e) {
+      var val = document.getElementById('myGmail');
+      if (document.body.createTextRange) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(element);
+        range.select();
+      } else if (window.getSelection) {
+        var selection = window.getSelection();
+        var range = document.createRange();
+        range.selectNodeContents(val);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+      document.execCommand("Copy", false, null);
     },
     handleScrollLinks: function() {
       $("a").on('click', function(event) {
