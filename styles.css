@@ -41,6 +41,15 @@ a.textLink {
   color:#1D8B37;
 }
 
+#myGmail {
+  color:#1D8B37;
+}
+
+#myGmail:hover {
+  text-decoration:underline;
+  cursor:pointer;
+}
+
 ul {
   list-style-type:none;
 }
@@ -301,6 +310,27 @@ img.app{
 .contact img {
   max-width:3em;
   padding:1%;
+}
+
+.tooltip {
+  position:relative;
+}
+
+.tooltip #tooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
 }
 
 /*-----------------------MEDIA SCREEN--------------------------*/

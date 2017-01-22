@@ -23,6 +23,10 @@ $(document).ready(function(){
         selection.addRange(range);
       }
       document.execCommand("Copy", false, null);
+      document.getElementById('tooltipText').style.visibility = 'visible';
+      setTimeout(function(){
+        document.getElementById('tooltipText').style.visibility = 'hidden';
+      }, 1000);
     },
     handleScrollLinks: function() {
       $("a").on('click', function(event) {
