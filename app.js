@@ -6,7 +6,7 @@ $(document).ready(function(){
       app.handleScrollLinks();
       $(window).on('scroll', app.checkIfInView);
       $(window).on('scroll resize', app.checkIfInView);
-      $(window).trigger('scroll');
+      // $(window).trigger('scroll');
       document.getElementById('myGmail').addEventListener('click', app.copyText);
     },
     copyText: function(e) {
