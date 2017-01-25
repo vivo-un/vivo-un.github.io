@@ -31,6 +31,16 @@ a:visited {
   border-bottom:3px solid black;
 }
 
+.topic-active{
+  -webkit-transition:0.3s ease;
+  -moz-transition:0.3s ease;
+  -ms-transition:0.3s ease;
+  -o-transition:0.3s ease;
+  transition:0.3s ease;
+  padding-bottom:1em;
+  border-bottom:3px solid black;
+}
+
 a:hover.image{
   -webkit-filter: drop-shadow(-1px 2px 2px grey);
   filter: drop-shadow(-1px 2px 2px grey);
@@ -41,6 +51,10 @@ a.textLink {
 }
 
 a.textLink:hover {
+  text-decoration:underline;
+}
+
+a.section:hover {
   text-decoration:underline;
 }
 

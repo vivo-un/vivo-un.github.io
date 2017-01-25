@@ -53,7 +53,6 @@ $(document).ready(function(){
       var adjustedHeight = window_height * 0.3;
       var window_top_position = $(window).scrollTop();
       var window_bottom_position = (window_top_position + window_height);
-      console.log($(this).scrollTop() + ' ' + adjustedHeight);
 
       var $nav = $('#main-nav');
       if ($(this).scrollTop() > adjustedHeight) {
@@ -61,6 +60,23 @@ $(document).ready(function(){
       } else {
         $nav.removeClass('light-nav');
       }
+
+      $('h2').each(function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+        var topic = $element.attr('id');
+        console.log('topic is ', topic);
+
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+        console.log('should be element' , $('#'+topic));
+          $('#nav-' + topic).addClass('topic-active');
+        } else {
+          $('#nav-' + topic).removeClass('topic-active');
+        }
+      });
 
       $('.skillbar').each(function() {
         var $element = $(this);
