@@ -61,17 +61,15 @@ $(document).ready(function(){
         $nav.removeClass('light-nav');
       }
 
-      $('h2').each(function() {
+      $('.topic').each(function() {
         var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_position = $element.offset().top;
         var element_bottom_position = (element_top_position + element_height);
         var topic = $element.attr('id');
-        console.log('topic is ', topic);
 
-        if ((element_bottom_position >= window_top_position) &&
-            (element_top_position <= window_bottom_position)) {
-        console.log('should be element' , $('#'+topic));
+        if ((element_bottom_position >= window_top_position*1.1) &&
+            (element_top_position <= window_top_position*1.1)) {
           $('#nav-' + topic).addClass('topic-active');
         } else {
           $('#nav-' + topic).removeClass('topic-active');
