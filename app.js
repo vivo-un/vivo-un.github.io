@@ -50,11 +50,13 @@ $(document).ready(function(){
     },
     checkIfInView: function() {
       var window_height = $(window).height();
+      var adjustedHeight = window_height * 0.3;
       var window_top_position = $(window).scrollTop();
       var window_bottom_position = (window_top_position + window_height);
+      console.log($(this).scrollTop() + ' ' + adjustedHeight);
 
       var $nav = $('#main-nav');
-      if ($(this).scrollTop() > window_height) {
+      if ($(this).scrollTop() > adjustedHeight) {
         $nav.addClass('light-nav');
       } else {
         $nav.removeClass('light-nav');
