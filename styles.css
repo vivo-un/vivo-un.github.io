@@ -20,7 +20,7 @@ a:visited {
   color:black;
 }
 
-a:hover {
+.nav a:hover {
   -webkit-transition:0.3s ease;
   -moz-transition:0.3s ease;
   -ms-transition:0.3s ease;
@@ -37,11 +37,15 @@ a:hover.image{
 }
 
 a.textLink {
-  color:#1D8B37;
+  color:#33A9DC;
+}
+
+a.textLink:hover {
+  text-decoration:underline;
 }
 
 #myGmail {
-  color:#1D8B37;
+  color:#33A9DC;
 }
 
 #myGmail:hover {
