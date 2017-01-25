@@ -53,6 +53,13 @@ $(document).ready(function(){
       var window_top_position = $(window).scrollTop();
       var window_bottom_position = (window_top_position + window_height);
 
+      var $nav = $('#main-nav');
+      if ($(this).scrollTop() > window_height) {
+        $nav.addClass('light-nav');
+      } else {
+        $nav.removeClass('light-nav');
+      }
+
       $('.skillbar').each(function() {
         var $element = $(this);
         var element_height = $element.outerHeight();
