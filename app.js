@@ -4,8 +4,8 @@ $(document).ready(function(){
   app = {
     init: function() {
       app.handleScrollLinks();
-      $(window).on('scroll', app.checkIfInView);
-      $(window).on('scroll resize', app.checkIfInView);
+      $(window).on('scroll', app.chec);
+      $(window).on('scroll resize', app.checkForAnimations);
       // $(window).trigger('scroll');
       document.getElementById('myGmail').addEventListener('click', app.copyText);
     },
@@ -48,19 +48,7 @@ $(document).ready(function(){
         }, 1500);
       });
     },
-    checkIfInView: function() {
-      var window_height = $(window).height();
-      var adjustedHeight = window_height * 0.3;
-      var window_top_position = $(window).scrollTop();
-      var window_bottom_position = (window_top_position + window_height);
-
-      var $nav = $('#main-nav');
-      if ($(this).scrollTop() > adjustedHeight) {
-        $nav.addClass('light-nav');
-      } else {
-        $nav.removeClass('light-nav');
-      }
-
+    highlightCurrentSectionInNavBar: function(window_height, adjustedHeight, window_top_position, window_bottom_position) {
       $('.topic').each(function() {
         var $element = $(this);
         var element_height = $element.outerHeight();
@@ -75,22 +63,34 @@ $(document).ready(function(){
           $('#nav-' + topic).removeClass('topic-active');
         }
       });
-
+    },
+    checkIfSkillsInView: function(window_height, adjustedHeight, window_top_position, window_bottom_position){
       $('.skillbar').each(function() {
         var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_position = $element.offset().top;
         var element_bottom_position = (element_top_position + element_height);
 
-        //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
             app.handleSkillsAnimate();
-        //   $element.addClass('in-view');
-        // } else {
-        //   $element.removeClass('in-view');
         }
       });
+    },
+    checkForAnimations: function() {
+      var window_height = $(window).height();
+      var adjustedHeight = window_height * 0.3;
+      var window_top_position = $(window).scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      var $nav = $('#main-nav');
+      if ($(this).scrollTop() > adjustedHeight) {
+        $nav.addClass('light-nav');
+      } else {
+        $nav.removeClass('light-nav');
+      }
+      app.highlightCurrentSectionInNavBar(window_height, adjustedHeight, window_top_position, window_bottom_position);
+      app.checkIfSkillsInView(window_height, adjustedHeight, window_top_position, window_bottom_position);
     }
   };
 });
